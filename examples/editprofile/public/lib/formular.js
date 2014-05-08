@@ -268,7 +268,7 @@ var FormMixin = {
 					},
 					error: function(e) {
 						var errorMsg = null;
-						if(_this.props.onError)
+						if(_this.onError)
 							errorMsg = _this.onError(e);
 						_this.setState({errorMsg: errorMsg ? errorMsg : e.statusText});
 					},
